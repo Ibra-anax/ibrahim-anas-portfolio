@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ibrahim anas - portfolio website </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fd7aa5db1f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">    
+        <div class="container">
+            <nav>
+                <img src="anas.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li> 
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul> 
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="heaher-text">
+                <h1>Hello !.. <br>i am <span>Anas</span></h1>
+                <h3>A web designer and also design logo & poster</h3>
+        </div>
+    </div>
+
+    <!----------------------- about ------------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="123.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title"> About Me </h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus officiis distinctio quae est totam facilis consectetur explicabo earum, et, voluptate incidunt, maxime id ad illum aperiam fuga asperiores dolor dolores?
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam aliquam ipsum eos, quaerat facere, maxime at iusto fugiat sequi aut accusamus culpa in! Quibusdam consequuntur quasi deserunt.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-links" onclick="opentab('Education')">Education</p>
+                            <p class="tab-links"onclick="opentab('skills')">Skills</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Education">
+                            <ul>
+                                <li><span>SSLC</span><br>Karnataka board</li>
+                                <li><span>PUC</span><br>Karnataka board</li>
+                                <li><span>Degree</span><br>Mangalore univercity</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="skills">
+                            <ul>
+                                <li><span>HTML,CSS,JAVASCRIPT</span><br>Zephyr Technology</li>
+                                <li><span>C,C++,JAVA,SQL,DS</span><br>Alva's Educational Foundation</li>
+                                <li><span>Poster & LOGO Design </span><br>Youtube Channel</li>
+                            </ul>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+
+        <!---------------------- skills --------------------->
+        <div>
+
+        </div>
+        <!---------------------- service ------------------------>
+        <div id="service">
+            <div class="container">
+                <h1 class="sub-title">Service's</h1>
+                <div class="service-list">
+                    <div>
+                        <i class="fa-solid fa-file-code"></i>
+                        <h2>Web Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Corrupti, dicta? Neque facilis natus ullam consectetur maiores id molestiae vero voluptatum nisi fuga vel nam alias,
+                            ab sapiente inventore quos odio!
+                        </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop-simple"></i>
+                        <h2>Poster Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Corrupti, dicta? Neque facilis natus ullam consectetur maiores id molestiae vero voluptatum nisi fuga vel nam alias,
+                            ab sapiente inventore quos odio!
+                        </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-pen-nib"></i>
+                        <h2>LOGO Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Corrupti, dicta? Neque facilis natus ullam consectetur maiores id molestiae vero voluptatum nisi fuga vel nam alias,
+                            ab sapiente inventore quos odio!
+                        </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------------------------  contact  ----------------------- -->
+
+        <div>
+            <div id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left">
+                            <h1 class="sub-title">Contact Me</h1>
+                            <p class="get">-----  GET IN TOUCH  -----</p>
+                            <p><i class="fa-solid fa-envelope"></i>E-mail</p>
+                            <p><i class="fa-solid fa-phone"></i>contact</p>
+                            <div class="social-icons">
+                                <a href="http://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="http://whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                                <a href="http://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="contact-right">
+                            <form action="index.php" method="post">
+                                <p>Name</p>
+                                <input type="text" fullname="name"  placeholder="Full Name" name="name" required>
+                                <p>E-mail</p>
+                                <input type="email" email="email" placeholder="E-mail" name="email" required>
+                                <p>Number</p>
+                                <input type="text" number="number" placeholder="0123456789" name="number" required>
+                                <p>Message</p>
+                                <textarea name="Message"row="5" placeholder="Message"></textarea>
+                                <button type="submit" class="button btn"> Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontants = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-links");
+                }
+                for(tabcontant of tabcontants){
+                    tabcontant.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-links");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu()
+            {
+                sidemenu.style.right = "0";
+            }
+            function closemenu()
+            {
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        <footer>
+            <div class="copyright">
+                <p>Made by anas<i class="fa-regular fa-heart"></i> | <i class="fa-regular fa-copyright"></i>2025. All Rights Reserved</p>
+            </div>
+        </footer>
+</body>
+</html>
